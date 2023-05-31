@@ -878,7 +878,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80bcb39aee8a2b543ba85fcd715c9b4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: Laberinto
+  SceneName: Inicio
 --- !u!4 &1341761561
 Transform:
   m_ObjectHideFlags: 0
