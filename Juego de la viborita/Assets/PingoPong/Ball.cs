@@ -21,6 +21,22 @@ public class Ball : MonoBehaviour
         float yVelocity = Random.Range(0, 2) == 0 ? 1 : -1;
         ballRb.velocity = new Vector2(xVelocity, yVelocity) * inicialVeocity;
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Goal1"))
+        {
+            GameManager.instance.Paddle2Scored();
+            GameManager.instance.Restart();
+            Launch();
+        }
+        else
+        {
+            GameManager.instance.Paddle1Scored();
+            GameManager.instance.Restart();
+            Launch();
+        }
+    }
     void Update()
     {
         
