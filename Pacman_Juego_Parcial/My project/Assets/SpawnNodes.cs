@@ -4,18 +4,21 @@ using UnityEngine;
 
 public class SpawnNodes : MonoBehaviour
 {
-    int numToSpawn = 25;
+    int numToSpawn = 28;
     public float currentSpawnOffset;
     public float spawnOffset = 0.3f;
 
      void Start()
     {
+
+       
+
         if (gameObject.name == "Node")
         {
             currentSpawnOffset = spawnOffset;
             for (int i = 0; i < numToSpawn; i++)
             {
-                GameObject clone = Instantiate(gameObject, new Vector3(transform.position.x + currentSpawnOffset, transform.position.y, transform.position.z), Quaternion.identity);
+                GameObject clone = Instantiate(gameObject, new Vector3(transform.position.x, transform.position.y + currentSpawnOffset, 0), Quaternion.identity);
                 currentSpawnOffset += spawnOffset;
             }
         }
