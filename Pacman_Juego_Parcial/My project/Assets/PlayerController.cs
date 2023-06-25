@@ -4,16 +4,9 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    MovementController movementController;
-    
-    public SpriteRenderer sprite;
-    public Animator animator;
 
     public GameObject startNode;
 
-    public Vector2 startPos;
-
-   
 
     // Start is called before the first frame update
     void Awake()
@@ -88,5 +81,3 @@ public class PlayerController : MonoBehaviour
         sprite.flipX = flipX;
     }
 }
-
-    

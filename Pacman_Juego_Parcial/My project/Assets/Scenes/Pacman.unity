@@ -50849,10 +50849,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0f4698978da9da43ad3b94ca38c236e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentNode: {fileID: 1600670096}
   speed: 4
   direction: 
-  lastMovingDirection: 
+  targetPosition: {x: 0, y: 0}
 --- !u!114 &2049643614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50865,6 +50864,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e24d3bb2ff8732945b340a8406996937, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementController: {fileID: 2049643613}
 --- !u!1 &2051138272
 GameObject:
   m_ObjectHideFlags: 0
